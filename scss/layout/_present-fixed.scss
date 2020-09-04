@@ -1,0 +1,17 @@
+.present-fixed {
+  display: flex;
+  flex-wrap: wrap;  
+
+  padding: 204px 15px 239px;
+
+  @media (max-width: 1200px) { padding: 233px 0 229px 40px; }
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+
+    padding: 426px 0 0;
+
+    background: url(../img/photo-dontsov.png) no-repeat 76px 81px/228px,
+                url(../img/ellipse.svg) no-repeat -39px 120px/383px;
+  }
+}

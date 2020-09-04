@@ -1,0 +1,7 @@
+.footer-blackbar	{
+  flex-basis: 100%;
+
+  background-color: $bg-dark-blue;
+
+  @media (max-width: 1024px) { line-height: normal; }
+}

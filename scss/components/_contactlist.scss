@@ -1,0 +1,94 @@
+.contactlist {
+  @include text(400, 25px, $black);
+
+  @include reset-list;
+
+  padding: 2px 0 0 14px;
+
+  @media (max-width: 1200px) { flex-basis: 26%; }
+
+  @media (max-width: 1024px) {
+    padding: 0 0 0 33px;
+
+    @include text(500, 20px, $grey);
+  }  
+  
+  &__link::before {
+    background-repeat: no-repeat;
+  }
+  
+  &__item {
+    position: relative;
+
+    margin: 0 0 27px 0;   
+
+    &:last-child { margin: 0; }    
+    
+    &:nth-child(1) {
+      .contactlist__link::before {        
+        content: "";
+
+        position: absolute;
+        
+        top: 4px;
+        left: -38px;
+
+        width: 20px;
+        height: 26px;            
+        
+        background-image: url(../img/sprite-icon.svg#telephone);
+        background-size: 28px;
+        background-position: 0 6px;
+      }
+    }
+
+    &:nth-child(2) {
+      .contactlist__link::before {        
+        content: "";
+
+        position: absolute;
+
+        top: 7px;
+        left: -38px;
+
+        width: 24px;
+        height: 20px;
+        
+        background-image: url(../img/sprite-icon.svg#email);
+        background-size: 22px;
+        background-position: 1px 2px;
+     }
+    }     
+
+    @media (max-width: 1200px) { 
+      margin: 0 0 25px 0;
+
+      &:nth-child(1) {
+        .contactlist__link::before {
+          top: 0;  
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      margin: 0 0 22px 0;
+    
+      &:nth-child(1) {
+        .contactlist__link::before { 
+          top: 4px;
+          left: -33px;
+
+          background-size: 20px;
+        }
+      }
+  
+      &:nth-child(2) {
+        .contactlist__link::before {   
+          left: -33px;
+
+          background-size: 13px;
+       }
+      }   
+    }    
+  }
+}

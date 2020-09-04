@@ -1,0 +1,61 @@
+.present {
+  overflow: hidden;
+
+  flex-basis: 100%;
+
+  background: url(../img/photo-dontsov.png) no-repeat 952px 54px/437px,
+              url(../img/ellipse.svg) no-repeat 866px 64px/814px,
+              $bg-grey;
+
+  &__title {
+    flex-basis: 79%;
+
+    margin: 0 0 45px;
+      
+    @include text(900, 80px, $black);
+  }
+
+  &__aboutme {
+    display: block;
+
+    margin: 8px 0 0;
+          
+    @include text(300, 25px, $grey);
+  }
+
+  @media (max-width: 1200px) {
+    background: url(../img/photo-dontsov.png) no-repeat 554px 58px,
+                url(../img/ellipse.svg) no-repeat 479px 156px/696px,
+                $bg-grey;
+    &__title {
+      margin: 0 0 46px;
+      padding: 0px 270px 0 0;
+
+      @include text(900, 54px, $black);
+    }
+
+    &__aboutme { margin: 16px 0 0; }
+  }
+
+  @media (max-width: 1024px) {
+    background: linear-gradient(180deg, #fbfbfb 0%, #ffffff 77%);
+
+    &__title {
+      flex-basis: 95%;
+
+      margin: 0 0 30px;
+      padding: 0;
+
+      text-align: center;
+
+      @include text(900, 30px, $black);
+    }
+
+    &__aboutme {
+      margin: 7px 0 0;
+
+      @include text(500, 16px, $grey);
+      line-height: normal;
+    }
+  }
+}

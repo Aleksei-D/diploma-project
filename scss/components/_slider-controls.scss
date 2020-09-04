@@ -1,0 +1,40 @@
+.slider-controls {
+  display: none;
+  
+  &__btn {
+    display: none;
+
+    font-size: 0;
+  }  
+
+  @media (max-width: 1200px) {
+    display: flex;
+
+    flex: 100%;
+    justify-content: center;
+
+    margin-bottom: 100px;
+
+    &__btn {
+      display: block;    
+
+      padding: 9px;
+
+      border-radius: 50%;
+      border: 0;
+      background-color: #ebebeb;
+    }
+
+    &__btn+&__btn { margin-left: 30px; }
+
+    &__btn_active { background-color: #ff4e2e; }  
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 50px;
+
+    &__btn { padding: 5px; }
+
+    &__btn+&__btn { margin-left: 15px; }
+  }
+}

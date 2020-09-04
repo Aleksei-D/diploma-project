@@ -1,0 +1,45 @@
+@import 'abstracts/_variables.scss';
+@import 'abstracts/_mixins.scss';
+@import 'abstracts/_animations.scss';
+
+@import 'base/_fonts.scss';
+@import 'base/_global.scss';
+@import 'base/_normalize.scss';
+@import 'base/_visually-hidden.scss';
+
+@import 'layout/_fixed-container.scss';
+@import 'layout/_casework-fixed.scss';
+@import 'layout/_casework.scss';
+@import 'layout/_footer-fixed.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_header-fixed.scss';
+@import 'layout/_header.scss';
+@import 'layout/_main.scss';
+@import 'layout/_present-fixed.scss';
+@import 'layout/_present.scss';
+@import 'layout/_price-fixed.scss';
+@import 'layout/_price.scss';
+@import 'layout/_services-fixed.scss';
+@import 'layout/_services.scss';
+
+@import 'components/_btn-menu.scss';
+@import 'components/_btn.scss';
+@import 'components/_btnclose.scss';
+@import 'components/_contactlist.scss';
+@import 'components/_footer-address.scss';
+@import 'components/_footer-blackbar.scss';
+@import 'components/_footer-callback.scss';
+@import 'components/_footer-copyright.scss';
+@import 'components/_header-contact.scss';
+@import 'components/_header-nav.scss';
+@import 'components/_menulist.scss';
+@import 'components/_networklist.scss';
+@import 'components/_price-description.scss';
+@import 'components/_price-offer.scss';
+@import 'components/_serviceslist.scss';
+@import 'components/_slider-controls.scss';
+@import 'components/_worklist.scss';
+@import 'components/_modal-overlay.scss';
+@import 'components/_form.scss';
+@import 'components/_message.scss';
+@import 'components/_decor.scss';

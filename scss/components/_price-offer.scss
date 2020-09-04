@@ -1,0 +1,22 @@
+.price-offer {
+  display: flex;
+  flex-basis: 81.7%;
+  flex-wrap: 	wrap;
+
+  margin: 0;
+
+  line-height: 60px;
+
+  @include text(700, 45px, $white);
+
+  @media (max-width: 1200px) { flex-basis: 100%; }
+
+  @media (max-width: 1024px) {
+    margin: 0;
+    
+    line-height: 40px;
+    letter-spacing: 0;
+
+    @include text(700, 28px, $white);
+  }
+}

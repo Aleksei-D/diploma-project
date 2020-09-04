@@ -1,0 +1,19 @@
+.footer-copyright {
+  display: block;
+  
+  padding: 27px 0 32px;
+
+  @include text(400, 16px, $white);
+
+  text-align: center;
+
+  background-color: $bg-dark-blue;
+
+  @media (max-width: 1200px) { padding: 28px 0 30px; }
+
+  @media (max-width: 1024px) {
+    padding: 17px 0 18px;
+
+    @include text(400, 12px, $white);
+  }
+}

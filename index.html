@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Донцов Алексей, Frontend-разработчик</title>
+
+	<meta charset="utf-8">
+	<meta name="description" content="Frontend-разработка">
+	<meta name="theme-color" content="#8993ad">
+
+	<link rel="preload" href="fonts/roboto-regular-400.woff2" as="font" crossorigin="anonymous"> 
+	<link rel="preload" href="fonts/roboto-medium-500.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/roboto-bold-700.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/roboto-black-900.woff2" as="font" crossorigin="anonymous">	
+	<link rel="stylesheet" type="text/css" href="css/style.min.css" onload="this.rel='stylesheet'">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="body">
+	<header class="header">
+		<div class="fixed-container header-fixed">
+			<nav class="header-nav">
+				<button class="btn-menu" id="js-btn-menu" type="button" aria-label="Открыть меню"></button>
+
+				<ul class="menulist menulist_toogle" id="js-menulist-header">
+					<li class="menulist__item">
+						<a href="#js-services" class="menulist__link">Услуги</a>
+					</li>
+
+					<li class="menulist__item">
+						<a href="#js-casework" class="menulist__link">Портфолио</a>
+					</li>
+
+					<li class="menulist__item">
+						<a href="#js-price" class="menulist__link">Стоимость</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header-contact">
+				<a class="header-contact__telephone" href="tel:+74999955577">+7 (499) 995-55-77</a>
+				
+				<button class="btn btn_rnd" id="js-callform-header" type="button" aria-label="Заказать звонок">Заказать звонок</button>				
+			</div>			
+		</div>
+	</header>
+	<main class="main">
+		<section class="present" id="js-present">
+			<div class="fixed-container present-fixed">
+				<h1 class="present__title">Алексей Донцов
+					<span class="present__aboutme">Frontend-разработчик и&nbsp;веб-верстальщик</span>
+				</h1>
+
+				<button class="btn btn_section btn_orange" id="js-btn-service" type="button">Узнать больше</button>
+
+				<ul class="decor decor_present">
+					<li class="decor__item decor__item_present">&lt;div&gt;</li>
+
+					<li class="decor__item decor__item_present">&lt;div&gt;</li>
+					
+					<li class="decor__item decor__item_present">{&nbsp;}</li>
+
+					<li class="decor__item decor__item_present">&lt;/&gt;</li>					
+
+					<li class="decor__item decor__item_present">#</li>
+
+					<li class="decor__item decor__item_present">&lt;/&gt;</li>	
+				</ul>
+			</div>
+		</section>
+
+		<section class="services" id="js-services">
+			<div class="fixed-container services-fixed">
+				<h2 class="services__title">Что я делаю</h2>
+
+				<ul class="serviceslist">
+					<li class="serviceslist__item">Вёрстка лендинг&mdash;страниц и&nbsp;сайтов любой сложности</li>
+
+					<li class="serviceslist__item">Адаптивная вёрстка под все браузеры и&nbsp;устройства</li>
+
+					<li class="serviceslist__item">Frontend&mdash;разработка и&nbsp;программирование</li>
+
+					<li class="serviceslist__item">Исправление и&nbsp;доработка существующей вёрстки</li>
+				</ul>
+
+				<button class="btn btn_section btn_orange" id="js-btn-price" type="button" aria-label="Узнать стоимость">Узнать стоимость</button>
+			</div>
+		</section>
+
+		<section class="casework" id="js-casework">
+			<div class="fixed-container casework-fixed">
+				<h2 class="casework__title">Примеры моих работ</h2>
+				
+				<button class="casework__btn casework__btn_left" id="js-prev-btn" type="button" aria-label="Листать влево">Влево</button>											
+				
+				<div class="worklist">					
+					<article class="worklist__item">
+						<a href="#">
+							<picture>
+								<source media="(min-width: 1201px)" type="image/webp" srcset="img/web-psychology-desktop@1x.webp 1x, img/web-psychology-desktop@2x.webp 2x">
+
+								<source media="(min-width: 1025px)" type="image/webp" srcset="img/web-psychology-tablet@1x.webp 1x, img/web-psychology-tablet@2x.webp 2x">
+
+								<source type="image/webp" srcset="img/web-psychology-mobile@1x.webp 1x, img/web-psychology-mobile@2x.webp 2x">
+															
+								<source media="(min-width: 1201px)" srcset="img/web-psychology-desktop@1x.jpg 1x, img/web-psychology-desktop@2x.jpg 2x">
+
+								<source media="(min-width: 1025px)" srcset="img/web-psychology-tablet@1x.jpg 1x, img/web-psychology-tablet@2x.jpg 2x">
+
+								<img class="worklist__img" src="img/web-psychology-mobile@1x.jpg" srcset="img/web-psychology-mobile@2x.jpg 2x" alt="Сайт психологии">
+							</picture>
+
+							<h3 class="worklist__title">Сайт психолога Веры Антоновой</h3>
+						</a>
+					</article>
+					
+					<article class="worklist__item">
+						<a href="#">
+							<picture>
+								<source media="(min-width: 1201px)" type="image/webp" srcset="img/web-babyclothes-desktop@1x.webp 1x, img/web-babyclothes-desktop@2x.webp 2x">
+
+								<source media="(min-width: 1025px)" type="image/webp" srcset="img/web-babyclothes-tablet@1x.webp 1x, img/web-babyclothes-tablet@2x.webp 2x">
+
+								<source type="image/webp" srcset="img/web-babyclothes-mobile@1x.webp 1x, img/web-babyclothes-mobile@2x.webp 2x">
+															
+								<source media="(min-width: 1201px)" srcset="img/web-babyclothes-desktop@1x.jpg 1x, img/web-babyclothes-desktop@2x.jpg 2x">
+
+								<source media="(min-width: 1025px)" srcset="img/web-babyclothes-tablet@1x.jpg 1x, img/web-babyclothes-tablet@2x.jpg 2x">
+
+								<img class="worklist__img" src="img/web-babyclothes-mobile@1x.jpg" srcset="img/web-babyclothes-mobile@2x.jpg 2x" alt="Сайт детской одежды">
+							</picture>
+
+							<h3 class="worklist__title">Сайт магазина детской одежды</h3>
+						</a>
+					</article>
+					
+					<article class="worklist__item">
+						<a href="#">
+							<picture>
+								<source media="(min-width: 1201px)" type="image/webp" srcset="img/web-fishman-desktop@1x.webp 1x, img/web-fishman-desktop@2x.webp 2x">
+
+								<source media="(min-width: 1025px)" type="image/webp" srcset="img/web-fishman-tablet@1x.webp 1x, img/web-fishman-tablet@2x.webp 2x">
+
+								<source type="image/webp" srcset="img/web-fishman-mobile@1x.webp 1x, img/web-fishman-mobile@2x.webp 2x">
+															
+								<source media="(min-width: 1201px)" srcset="img/web-fishman-desktop@1x.jpg 1x, img/web-fishman-desktop@2x.jpg 2x">
+
+								<source media="(min-width: 1025px)" srcset="img/web-fishman-tablet@1x.jpg 1x, img/web-fishman-tablet@2x.jpg 2x">
+
+								<img class="worklist__img" src="img/web-fishman-mobile@1x.jpg" srcset="img/web-fishman-mobile@2x.jpg 2x" alt="Сайт магазин Рыболов">
+							</picture>
+
+							<h3 class="worklist__title">Сайт магазина «Рыболов»</h3>
+						</a>
+					</article>					
+					
+					<article class="worklist__item">
+						<a href="#">
+							<picture>
+								<source media="(min-width: 1201px)" type="image/webp" srcset="img/web-psychology-desktop@1x.webp 1x, img/web-psychology-desktop@2x.webp 2x">
+
+								<source media="(min-width: 1025px)" type="image/webp" srcset="img/web-psychology-tablet@1x.webp 1x, img/web-psychology-tablet@2x.webp 2x">
+
+								<source type="image/webp" srcset="img/web-psychology-mobile@1x.webp 1x, img/web-psychology-mobile@2x.webp 2x">
+															
+								<source media="(min-width: 1201px)" srcset="img/web-psychology-desktop@1x.jpg 1x, img/web-psychology-desktop@2x.jpg 2x">
+
+								<source media="(min-width: 1025px)" srcset="img/web-psychology-tablet@1x.jpg 1x, img/web-psychology-tablet@2x.jpg 2x">
+
+								<img class="worklist__img" src="img/web-psychology-mobile@1x.jpg" srcset="img/web-psychology-mobile@2x.jpg 2x" alt="Сайт психологии">
+							</picture>
+
+							<h3 class="worklist__title">Сайт психолога Веры Антоновой</h3>
+						</a>
+					</article>					
+					
+					<article class="worklist__item">
+						<a href="#">
+							<picture>
+								<source media="(min-width: 1201px)" type="image/webp" srcset="img/web-babyclothes-desktop@1x.webp 1x, img/web-babyclothes-desktop@2x.webp 2x">
+
+								<source media="(min-width: 1025px)" type="image/webp" srcset="img/web-babyclothes-tablet@1x.webp 1x, img/web-babyclothes-tablet@2x.webp 2x">
+
+								<source type="image/webp" srcset="img/web-babyclothes-mobile@1x.webp 1x, img/web-babyclothes-mobile@2x.webp 2x">
+															
+								<source media="(min-width: 1201px)" srcset="img/web-babyclothes-desktop@1x.jpg 1x, img/web-babyclothes-desktop@2x.jpg 2x">
+
+								<source media="(min-width: 1025px)" srcset="img/web-babyclothes-tablet@1x.jpg 1x, img/web-babyclothes-tablet@2x.jpg 2x">
+
+								<img class="worklist__img" src="img/web-babyclothes-mobile@1x.jpg" srcset="img/web-babyclothes-mobile@2x.jpg 2x" alt="Сайт детской одежды">
+							</picture>
+
+							<h3 class="worklist__title">Сайт магазина детской одежды</h3>
+						</a>
+					</article>					
+					
+					<article class="worklist__item">
+						<a href="#">
+							<picture>
+								<source media="(min-width: 1201px)" type="image/webp" srcset="img/web-fishman-desktop@1x.webp 1x, img/web-fishman-desktop@2x.webp 2x">
+
+								<source media="(min-width: 1025px)" type="image/webp" srcset="img/web-fishman-tablet@1x.webp 1x, img/web-fishman-tablet@2x.webp 2x">
+
+								<source type="image/webp" srcset="img/web-fishman-mobile@1x.webp 1x, img/web-fishman-mobile@2x.webp 2x">
+															
+								<source media="(min-width: 1201px)" srcset="img/web-fishman-desktop@1x.jpg 1x, img/web-fishman-desktop@2x.jpg 2x">
+
+								<source media="(min-width: 1025px)" srcset="img/web-fishman-tablet@1x.jpg 1x, img/web-fishman-tablet@2x.jpg 2x">
+
+								<img class="worklist__img" src="img/web-fishman-mobile@1x.jpg" srcset="img/web-fishman-mobile@2x.jpg 2x" alt="Сайт магазин Рыболов">
+							</picture>
+
+							<h3 class="worklist__title">Сайт магазина «Рыболов»</h3>
+						</a>
+					</article>
+				</div>				
+
+				<button class="casework__btn casework__btn_right" id="js-next-btn" type="button" aria-label="Листать вправо">Вправо</button>
+
+				<button class="btn btn_section btn_orange" id="js-callform-casework" type="button" aria-label="Заказать проект">Заказать проект</button>
+			</div>
+		</section>		
+
+		<section class="price" id="js-price">
+			<div class="fixed-container price-fixed">
+				<h2 class="visually-hidden">Цены</h2>
+
+				<p class="price-offer">
+					Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа. *
+				
+					<small class="price-description">* Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</small>
+				</p>
+
+				<ul class="decor">
+					<li class="decor__item">&lt;div&gt;</li>
+
+					<li class="decor__item">{&nbsp;}</li>
+					
+					<li class="decor__item">{&nbsp;}</li>
+
+					<li class="decor__item">&lt;/&gt;</li>					
+
+					<li class="decor__item">#</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="fixed-container footer-fixed">
+			<ul class="menulist menulist_footer" id="js-menulist-footer">
+				<li class="menulist__item menulist__item_footer">
+					<a href="#js-services" class="menulist__link menulist__link_grey">Услуги</a>
+				</li>
+
+				<li class="menulist__item menulist__item_footer">
+					<a href="#js-casework" class="menulist__link menulist__link_grey">Портфолио</a>
+				</li>
+
+				<li class="menulist__item menulist__item_footer">
+					<a href="#js-price" class="menulist__link menulist__link_grey">Стоимость</a>
+				</li>				
+			</ul>
+							
+			<address class="footer-address">
+				<ul class="contactlist">
+					<li class="contactlist__item">
+						<a class="contactlist__link" href="tel:+74999955577">+7 (499) 995-77-55</a>
+					</li>
+
+					<li class="contactlist__item">
+						<a class="contactlist__link" href="mailto:2595839@gmail.com">2595839@gmail.com</a>
+					</li>
+				</ul>
+			</address>
+
+			<div class="footer-callback">
+				<button class="btn btn_footer" id="js-callform-footer" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+
+				<ul class="networklist">
+					<li class="networklist__item">
+						<a class="networklist__link" href="#" aria-label="Vkontakte"></a>
+					</li>
+
+					<li class="networklist__item">
+						<a class="networklist__link" href="#" aria-label="Facebook"></a>
+					</li>
+
+					<li class="networklist__item">
+						<a class="networklist__link" href="#" aria-label="Twitter"></a>
+					</li>
+
+					<li class="networklist__item">
+						<a class="networklist__link" href="#" aria-label="Instagram"></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-blackbar">
+			<p class="fixed-container">
+				<small class="footer-copyright">&copy; Донцов Алексей, 2019 - 2020</small>
+			</p>
+		</div>
+	</footer>
+
+	<div class="modal-overlay modal-overlay_form" id="js-overlay-form" role="dialog" aria-modal="true">
+		<form class="form form_modal" id="js-form">
+			<h2 class="form__title">Заказать звонок</h2>
+
+			<button class="btnclose btnclose_form" id="js-btnclose-form" aria-label="Закрыть форму" type="reset">Закрыть форму</button>
+
+			<input class="form__input" id="js-name-input" type="text" required name="Имя" placeholder="Ваше имя" aria-label="Введите Ваше имя">
+
+			<input class="form__input" id="js-tel-input" type="tel" required name="Телефон" placeholder="+7(___)___-__-__" aria-label="Введите Ваш номер телефона" minlength="12">
+
+			<button class="btn btn_section btn_orange btn_form" id="js-submit-form" aria-label="Позвоните мне" type="submit">Позвоните мне</button>
+
+			<label class="form__text">
+				<input type="checkbox" required>
+				Нажимая на кнопку "Позвоните мне", я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности
+			</label>
+		</form>
+	</div>
+
+	<div class="modal-overlay modal-overlay_message" id="js-overlay-message">
+		<div class="message message_modal" id="js-message">
+			<h2 class="message__title">Ваше сообщение успешно отправлено =)</h2>
+
+			<button class="btnclose btnclose_message" id="js-btnclose-message" aria-label="Закрыть сообщение">Закрыть сообщение</button>
+		</div>	
+	</div>
+
+	<script src="js/script.min.js"></script>
+</body>
+</html>

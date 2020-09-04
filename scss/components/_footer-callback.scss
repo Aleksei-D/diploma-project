@@ -1,0 +1,15 @@
+.footer-callback {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  flex-basis: 22%;
+
+  @media (max-width: 1200px) { flex-basis: 26.2%; }
+
+  @media (max-width: 1024px) {
+    flex-basis: 100%;
+
+    line-height: normal;
+  }
+}

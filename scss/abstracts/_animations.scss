@@ -1,0 +1,137 @@
+@include keyframes (animation-desktop-1) {
+  to {
+    transform: translate(143px, -310px) rotate(-15deg);
+  }
+}
+
+@include keyframes (animation-desktop-2) {
+  to { 
+    transform: translate(310px, 70px) rotate(25deg);
+  }
+}
+
+@include keyframes (animation-desktop-3) {
+  to { 
+    transform: translate(-520px, -340px) rotate(25deg);
+  }
+}
+
+@include keyframes (animation-desktop-4) {
+  to { 
+    transform: translate(-270px, 190px) rotate(-25deg);
+  }
+}
+
+@include keyframes (animation-desktop-5) {
+  to { 
+    transform: translate(-400px, -115px) rotate(20deg);
+  }
+}
+
+@include keyframes (animation-desktop-6) {
+  to {
+    transform: translate(-15px, 225px) rotate(20deg);
+  }
+}
+
+@include keyframes (animation-desktop-7) {
+to { 
+  transform: translate(330px, 180px) rotate(-15deg) ;
+}
+}
+
+@include keyframes (animation-desktop-8) {
+to { 
+  transform: translate(-1310px, -20px) rotate(20deg) ;
+}
+}
+
+@include keyframes (animation-desktop-9) {
+to { 
+  transform: translate(220px, -5px) rotate(-25deg);
+}
+}
+
+@include keyframes (animation-desktop-10) {
+  to { 
+    transform: translate(-1190px, 165px) rotate(20deg);
+  }
+}
+
+@include keyframes (animation-tablet-1) {
+  to {
+    transform: translate(525px, -330px) rotate(-15deg);
+  }
+}
+  
+@include keyframes (animation-tablet-2) {
+  to { 
+    transform: translate(-5px, 105px) rotate(-25deg);
+  }
+}
+  
+@include keyframes (animation-tablet-3) {
+  to { 
+    transform: translate(-280px, -320px) rotate(25deg); 
+  }
+}
+  
+@include keyframes (animation-tablet-4) {
+  to { 
+    transform: translate(60px, -250px) rotate(20deg) ;
+  }
+}
+  
+@include keyframes (animation-tablet-5) {
+  to { 
+    transform: translate(-310px, 150px) rotate(20deg) ;
+  }
+}
+
+@include keyframes (animation-tablet-6) {
+  to { 
+    transform: translate(-500px, 225px) rotate(20deg);
+  }
+}
+
+@include keyframes (animation-tablet-7) {
+  to { 
+    transform: translate(-860px, -60px) rotate(20deg);
+  }
+}
+
+@include keyframes (animation-tablet-8) {
+  to { 
+    transform: translate(-140px, 210px) rotate(-20deg);
+  }
+}
+
+@include keyframes (animation-mobile-1) {
+  to {    
+    transform: translate(-55px, -450px) rotate(20deg);
+  }
+}
+    
+@include keyframes (animation-mobile-2) {
+  to { 
+    transform: translate(-250px, -490px) rotate(25deg);
+  }
+}
+    
+@include keyframes (animation-mobile-3) {
+  to { 
+    transform: translate(-250px, -490px) rotate(25deg);
+  }
+}
+    
+@include keyframes (animation-mobile-4) {
+  to { 
+    transform: translate(-130px, -510px) rotate(-25deg);
+  }
+}
+    
+@include keyframes (animation-mobile-5) {
+  to { 
+    transform: translate(-260px, -395px) rotate(20deg);
+  }
+}

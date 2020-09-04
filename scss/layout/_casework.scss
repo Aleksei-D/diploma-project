@@ -1,0 +1,61 @@
+.casework {
+  flex-basis: 100%;
+
+  background-color: $bg-grey;
+
+  &__title {
+    flex-basis: 100%;
+
+    margin: 0 0 104px;
+
+    text-align: center;
+    line-height: 59.73px;
+
+    @include text(700, 54px, $black);
+  }
+
+  &__btn {
+    position: absolute;
+    top: 375px;
+      
+    z-index: 99;
+
+    padding: 30px;
+      
+    font-size: 0;
+    background: url("../img/arrow.png") no-repeat;
+    box-shadow: -5px 0px 4px 0px #f3f3f3;
+    border-radius: 41px;
+    border: none;
+
+    cursor: pointer;   
+  }
+
+  &__btn_left {
+    left: -1.4%;
+  }
+
+  &__btn_right  {
+    right: 0;
+
+    transform: scale(-1, 1);
+  }
+
+  @media (max-width: 1200px) {
+    &__title { margin: 0 0 100px 0; }
+
+    &__btn { display: none; }
+  }
+
+  @media (max-width: 1024px) {
+    &__title {
+      flex-basis: 87%;
+
+      margin: 0 0 42px 0;
+
+      line-height: 35px;
+
+      @include text(700, 30px, $black);
+    }
+  }
+}

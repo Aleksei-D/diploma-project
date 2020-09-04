@@ -1,0 +1,167 @@
+.decor {
+  position: relative;
+
+  @include reset-list;
+
+  &__item {
+    position: absolute;
+
+    @include text(700, 40px, $white);
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    &:nth-child(1) {
+      @include animation(animation-desktop-6);
+    
+      @media (max-width: 1200px) {
+        @include animation(animation-tablet-6);
+    
+        @include text(700, 23px, $white);
+      }
+    }
+
+    &:nth-child(2) {
+      @include animation(animation-desktop-7);
+    
+      @media (max-width: 1200px) {
+        @include animation(animation-tablet-7);
+    
+        @include text(700, 29px, $white);
+      }
+    }
+
+    &:nth-child(3) {
+      @include animation(animation-desktop-8);
+    
+      @include text(900, 50px, $white);
+    
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    &:nth-child(4) {
+      @include animation(animation-desktop-9);
+    
+      @media (max-width: 1200px) {
+        @include animation(animation-tablet-8);
+      }
+    }
+
+    &:nth-child(5) {
+      @include animation(animation-desktop-10);
+    
+      @include text(700, 60px, $white);
+    
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
+    &_present {
+      position: absolute;
+
+      @include text(900, 40px, transparent);
+
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+    
+      @media (max-width: 1024px) {
+        @include text(900, 18px, transparent);
+      }
+
+      &:nth-child(1) {
+        @include animation(animation-desktop-1);
+      
+        @include text(900, 30px, transparent);
+      
+        @media (max-width: 1200px) {
+          @include animation(animation-tablet-1);
+      
+          @include text(700, 29px, transparent);
+        }
+      
+        @media (max-width: 1024px) {
+          @include animation(animation-mobile-1);
+      
+          @include text(700, 14px, transparent);
+        }
+      }
+      
+      &:nth-child(2) {
+        @include animation(animation-desktop-2);
+      
+        @include text(700, 36px, transparent);
+      
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+      
+      &:nth-child(3) {
+        @include animation(animation-desktop-3);
+      
+        @include text(900, 46px, transparent);
+      
+        @media (max-width: 1200px) {
+          @include animation(animation-tablet-3);
+        }
+      
+        @media (max-width: 1024px) {
+          @include animation(animation-mobile-2);
+      
+          @include text(700, 22px, transparent);
+        }
+      }
+      
+      &:nth-child(4) {
+        @include animation(animation-desktop-4);  
+      
+        @media (max-width: 1200px) {
+          @include animation(animation-tablet-4);
+      
+          @include text(700, 45px, transparent);
+        }
+      
+        @media (max-width: 1024px) {
+          @include animation(animation-mobile-4);
+      
+          @include text(700, 16px, transparent);
+        }
+      }
+      
+      &:nth-child(5) {
+        @include animation(animation-desktop-5);
+      
+        @include text(500, 60px, transparent);
+      
+        @media (max-width: 1200px) {
+          @include animation(animation-tablet-5);
+        }
+      
+        @media (max-width: 1024px) {
+          @include animation(animation-mobile-5);
+      
+          @include text(700, 28px, transparent);
+        }
+      }
+      
+      &:nth-child(6) {
+        display: none;
+      
+        @media (max-width: 1200px) {
+          display: block;
+      
+          @include animation(animation-tablet-2);
+        }
+      
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+    } 
+  }
+}

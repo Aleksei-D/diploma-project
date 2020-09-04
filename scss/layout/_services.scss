@@ -1,0 +1,25 @@
+.services {
+  flex-basis: 100%;
+
+  &__title {
+    flex-basis: 100%;
+
+    margin: 0 0 86px 0;
+
+    text-align: center;
+
+    @include text(700, 54px, $black);
+  }
+
+  @media (max-width: 1200px) { 
+    &__title {margin: 0 0 86px 0; }
+  }
+
+  @media (max-width: 1024px) {
+    &__title {
+      margin: 0 0 33px 0;
+
+      @include text(700, 30px, $black);
+    }
+  }
+}

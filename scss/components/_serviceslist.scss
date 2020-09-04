@@ -1,0 +1,145 @@
+.serviceslist {
+  display: flex;
+  
+  flex-basis: 100%;    
+
+  @include reset-list;
+
+  margin: 0 0 92px;
+
+  @media (max-width: 1200px) {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 0 110px;
+    margin: 0 0 94px 0;
+  }
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+
+    padding: 0;
+    margin: 0 0 53px 0;
+  }
+
+  &__item {
+    flex-basis: 24%;
+    
+    line-height: 30px;  
+    text-align: center;
+
+    @include text(400, 20px, $grey);
+
+    @media (max-width: 1200px) { flex-basis: 46%; }
+
+    @media (max-width: 1024px) {
+      flex-basis: 80%;
+    
+      line-height: 24px;
+
+      @include text(400, 16px, $grey);
+    }
+
+    &::before	{
+      content: " ";
+
+      height: 77px;
+
+      display: block;     
+				
+      margin: 0 auto 16px;    
+      
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media (max-width: 1200px) {
+        margin: 0 auto 18px;	      
+      }
+
+      @media (max-width: 1024px) { 
+        margin: 0 auto 5px;
+
+        background-size: 60px;
+      }
+    }	
+
+    &:nth-child(1)::before {
+      width: 77px;
+
+      background-image: url(../img/sprite-icon.svg#tools);
+    }
+  
+    &:nth-child(2)::before {
+      width: 82px;
+
+      background-image: url(../img/sprite-icon.svg#responsive);
+      background-size: 83px;
+      background-position: 1px 1px;
+
+      @media (max-width: 1024px) {
+        background-size: 66px;
+        background-position: 10px 3px;
+      }
+    }
+  
+    &:nth-child(3)::before {
+      width: 74px;
+
+      background-image: url(../img/sprite-icon.svg#programming);
+    }
+
+    &:nth-child(4)::before {
+      width: 74px;
+      
+      background-image: url(../img/sprite-icon.svg#coding);
+    }
+
+    &:nth-child(1) {
+      margin-right: 38px;
+
+      @media (max-width: 1200px) { margin-right: 0; }
+
+      @media (max-width: 1024px) { margin-bottom: 41px; }
+    }
+
+    &:nth-child(2) {
+      margin-right: 32px;
+
+      @media (max-width: 1200px) {        
+        margin: 0 0 79px 0;
+      }
+
+      @media (max-width: 1024px) { margin-bottom: 45px; }
+    }
+
+    &:nth-child(3) {
+      flex-basis: 21%;
+
+      margin-right: 27px;
+
+      @media (max-width: 1200px) { 
+        flex-basis: 46%;
+
+        margin: 0;
+      }
+
+      @media (max-width: 1024px) {
+        flex-basis: 80%;
+
+        margin-bottom: 44px;
+      }
+    }
+
+    &:nth-child(4) {
+      flex-basis: 23%;
+      
+      @media (max-width: 1200px) { flex-basis: 46%; }
+
+      @media (max-width: 1024px) { 
+        flex-basis: 80%;
+
+        margin-bottom: 0;
+      }
+    }
+  }
+}

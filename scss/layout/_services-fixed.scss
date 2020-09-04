@@ -1,0 +1,12 @@
+.services-fixed {
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 79px 0 103px;
+
+  @media (max-width: 1200px) { padding: 78px 40px 105px; }
+
+  @media (max-width: 1024px) { padding: 39px 20px 51px; }
+}

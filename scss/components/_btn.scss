@@ -1,0 +1,86 @@
+.btn {
+  flex-basis: 207px;
+
+  padding: 10px 0;
+
+  @include text(400, 16px, #f53f4f);
+
+  border: 1px solid #f82370;
+  background-color: transparent;
+
+  @media (max-width: 1200px) {
+    padding: 10px 0;
+  }
+
+  &_orange {
+    color: $white;
+    background-color: $orange;
+    border: none;
+  }
+
+  &_section {
+    flex-basis: $btn-widtn-desktop;
+
+    padding: 18px 0;
+
+    @include text(400, 18px, $white);
+
+    @media (max-width: 1200px) {
+      flex-basis: $btn-widtn-tablet;
+
+      padding: 22px 0;
+    }
+
+    @media (max-width: 1024px) {
+      flex-basis: 280px;
+
+      padding: 17px 0;
+
+      @include text(400, 16px, $white);
+    }
+  }
+  
+  &_footer {
+    flex-basis: 247px;
+
+    margin: 0 0 31px 0;
+    padding: 12px 0;
+
+    @media (max-width: 1024px) {
+      flex-basis: 280px;
+
+      padding: 17px 0;
+      margin: 0 0 49px 0;
+
+      @include text(400, 16px, $white);
+
+      background-color: $orange;
+      border: none;
+    }
+  }
+  
+  &_rnd {
+    @media (max-width: 1024px) {
+      flex-basis: 26px;
+
+      overflow: hidden;
+
+      width: 15px;
+      height: 26px;
+
+      font-size: 0;
+      color: #fbfbfb;
+      border-radius: 50%;
+      border: 1px solid #fa0891;
+          
+      background-image: url(../img/sprite-icon.svg#telephone);
+      background-repeat: no-repeat;
+      background-position: 7px 7px;
+      background-size: 17px;
+    }
+  }
+  
+  &_form {
+    margin-bottom: 25px;
+  }
+}

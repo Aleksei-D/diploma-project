@@ -1,0 +1,17 @@
+.header-fixed {
+  display: flex;
+	
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 30px 15px 0;
+
+  @media (max-width: 1200px) {
+    position: relative;
+
+    padding: 30px 40px 0;
+  }
+
+  @media (max-width: 1024px) { padding: 26px 20px 0; }
+}

@@ -1,0 +1,5 @@
+.header-nav  {
+  flex-basis: 23%;
+
+  @media (max-width: 1200px) { 	flex-basis: 5%; }
+}

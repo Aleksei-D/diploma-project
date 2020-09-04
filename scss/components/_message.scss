@@ -1,0 +1,40 @@
+.message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+      
+    background: $bg-grey;
+      
+    &_modal {
+        position: fixed;
+          
+        top: 50%;
+        left: 50%;
+      
+        width: auto;
+        min-width: 275px;
+        height: auto;
+      
+        padding: 35px 40px 25px;
+      
+        transform:translate(-50%,-50%);
+          
+        z-index: 105;
+      
+        transition: opacity $speed $easing, visibility $speed $easing;
+
+        @media (max-width: 1200px) { padding: 25px; }
+    }
+      
+    &__title {
+        flex-basis: 100%;
+      
+        margin: 0;
+        padding: 0;
+      
+        text-align: center;
+      
+        @include text(700, 25px, $black);
+    }
+}

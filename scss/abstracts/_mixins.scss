@@ -1,0 +1,27 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin text($weight, $size, $color) {
+  font: {    
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+}
+
+@mixin keyframes ($animationName) {
+  @keyframes #{$animationName} {
+    @content
+  }
+}
+
+@mixin animation ($animation, $delay: .5s, $duration: 3s, $direction: normal, $fillmode: forwards) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: $fillmode;
+  animation-direction: $direction;
+}

@@ -1,0 +1,11 @@
+.price-fixed {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding: 73px 15px 81px;
+
+  @media (max-width: 1200px) { padding: 75px 10px 80px 40px; }
+
+  @media (max-width: 1024px) { padding: 40px 20px 43px; }
+}
